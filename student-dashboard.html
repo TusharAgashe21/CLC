@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - CLC Portal</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, Student</h2>
+        <div class="application-form">
+            <h3>Apply for College Leaving Certificate (CLC)</h3>
+            <form id="clcForm">
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" name="rollNumber" required readonly>
+
+                <label for="course">Course:</label>
+                <input type="text" id="course" name="course" required readonly>
+
+                <label for="reason">Reason for Leaving:</label>
+                <textarea id="reason" name="reason" required></textarea>
+
+                <label for="attachment">Supporting Documents:</label>
+                <input type="file" id="attachment" name="attachment">
+
+                <button type="submit">Submit Application</button>
+            </form>
+        </div>
+
+        <div class="application-status">
+            <h3>Your Application Status</h3>
+            <p>Status: <span id="applicationStatus">Pending</span></p>
+        </div>
+    </div>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
