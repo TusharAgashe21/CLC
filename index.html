@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLC Portal - Login</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>College Leaving Certificate Portal</h2>
+        <div class="form-container">
+            <h3>Login</h3>
+            <form id="loginForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="student">Student</option>
+                    <option value="admin">Admin</option>
+                </select>
+
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+        </div>
+        
+        <div class="form-container" id="registerContainer" style="display: none;">
+            <h3>Register</h3>
+            <form id="registerForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="rollNumber">Roll Number:</label>
+                <input type="text" id="rollNumber" name="rollNumber" required>
+
+                <label for="course">Course:</label>
+                <input type="text" id="course" name="course" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="registerEmail" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="registerPassword" name="password" required>
+
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
+    </div>
+
+    <script src="assets/scripts.js"></script>
+</body>
+</html>
